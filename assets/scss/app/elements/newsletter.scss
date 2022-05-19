@@ -1,0 +1,361 @@
+.newsletter {
+    background-color: #FFD800;
+
+    &__container {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 120px 50px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:1500px) {
+            padding: 120px 95px;
+        }
+
+
+
+        @media (max-width:1000px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 15px
+        }
+    }
+
+    &__leftside {
+        width: 36%;
+        position: relative;
+
+        @media (max-width:1200px) {
+
+            width: 48%;
+
+        }
+
+        @media (max-width:1000px) {
+            width: 65%;
+        }
+
+        @media (max-width:600px) {
+            width: 90%;
+        }
+
+        &::after {
+            content: '';
+            background-image: url(../images/redcarp.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: block;
+            position: absolute;
+            width: 211px;
+            height: 117px;
+
+            z-index: 0;
+            top: -64px;
+            left: -87px;
+
+            @media (max-width:1000px) {
+                background-size: 100%;
+
+
+                width: 127px;
+                height: 116px;
+                z-index: 0;
+                top: -43px;
+                left: -15px;
+            }
+
+        }
+
+        h6 {
+            font-size: 36px;
+          
+            color: #3A282E;
+            line-height: 40px;
+            z-index: 1;
+            position: relative;
+font-weight: bold;
+            @media (max-width:1000px) {
+                font-size: 26px;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+
+        p {
+            z-index: 1;
+            position: relative;
+            font-size: 18px;
+            margin-top: 24px;
+            color: black;
+            line-height: 32px;
+
+            @media (max-width:1000px) {
+                font-size: 15px;
+                margin-top: 15px;
+                line-height: 26px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__rightside {
+        @media (max-width:1200px) {
+
+            width: 48%;
+
+        }
+
+        @media (max-width:1000px) {
+            width: 100%;
+        }
+
+        .tnp-subscription {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 580px;
+
+            @media (max-width:700px) {
+
+                align-items: center;
+                justify-content: center;
+            }
+
+            label {
+                font-size: 14px;
+                font-weight: 400;
+                color: #3A282E;
+                padding: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        .tnp-field.tnp-field-firstname,
+        .tnp-field.tnp-field-email {
+            width: 49%;
+
+            @media (max-width:700px) {
+
+                width: 95%;
+            }
+        }
+
+        .tnp-field.tnp-field-button {
+            width: 100%;
+
+            @media (max-width:700px) {
+
+                width: 95%;
+            }
+
+            input {
+                width: 50%;
+                margin-left: auto;
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 4px;
+                background-color: #F12626;
+                text-decoration: none;
+                transition: 0.4s;
+                border: 1px solid transparent;
+
+
+                transition: 0.4s;
+
+                @media (max-width:900px) {
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    font-size: 13px;
+                    padding: 6px 20px;
+                }
+
+                @media (max-width:700px) {
+
+                    width: 100%;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: #3A282E;
+                    border: 1px solid #3A282E;
+                }
+            }
+        }
+
+        .tnp-subscription input[type=text],
+        .tnp-subscription input[type=email],
+        .tnp-subscription input[type=submit],
+        .tnp-subscription select {
+            border-radius: 5px;
+            color: #796165;
+            height: 48px;
+            outline: none;
+        }
+
+        .tnp-subscription input[type=submit] {
+            color: white;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+        }
+    }
+}
+
+.newsletter-block {
+    &__container {
+        max-width: 736px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 120px 0px;
+
+        @media (max-width:800px) {
+            padding: 60px 15px;
+        }
+    }
+
+    &__topside {
+        margin-bottom: 72px;
+        @media (max-width:1000px) {
+          margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+            line-height: 40px;
+            z-index: 1;
+            position: relative;
+            text-align: center;
+            margin-bottom: 24px;
+
+            @media (max-width:1000px) {
+                font-size: 26px;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+        p {
+            z-index: 1;
+            position: relative;
+            font-size: 18px;
+            margin-top: 24px;
+            color: black;
+            line-height: 32px;
+text-align: center;
+            @media (max-width:1000px) {
+                font-size: 15px;
+                margin-top: 15px;
+                line-height: 26px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__form {
+        .tnp-subscription {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 580px;
+
+            @media (max-width:700px) {
+
+                align-items: center;
+                justify-content: center;
+            }
+
+            label {
+                font-size: 14px;
+                font-weight: 500;
+                color: #3A282E;
+                padding: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        .tnp-field.tnp-field-firstname,
+        .tnp-field.tnp-field-email {
+            width: 49%;
+
+            @media (max-width:700px) {
+
+                width: 95%;
+            }
+        }
+
+        .tnp-field.tnp-field-button {
+            width: 100%;
+
+            @media (max-width:700px) {
+
+                width: 95%;
+            }
+
+            input {
+                width: 50%;
+                margin-left: auto;
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 4px;
+                background-color: #F12626;
+                text-decoration: none;
+                transition: 0.4s;
+                border: 1px solid transparent;
+
+
+                transition: 0.4s;
+
+                @media (max-width:900px) {
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    font-size: 13px;
+                    padding: 6px 20px;
+                }
+
+                @media (max-width:700px) {
+
+                    width: 100%;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: #3A282E;
+                    border: 1px solid #3A282E;
+                }
+            }
+        }
+
+        .tnp-subscription input[type=text],
+        .tnp-subscription input[type=email],
+        .tnp-subscription input[type=submit],
+        .tnp-subscription select {
+            border-radius: 5px;
+            color: #796165;
+            height: 48px;
+            outline: none;
+        }
+
+        .tnp-subscription input[type=submit] {
+            color: white;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+        }
+    }
+}

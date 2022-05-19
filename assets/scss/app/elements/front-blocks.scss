@@ -1,0 +1,144 @@
+.front-blocks {
+    background-color: #274672;
+
+    &__container {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 120px 50px;
+        padding-bottom: 50px;
+
+        @media (max-width:1000px) {
+            padding: 40px 15px;
+        }
+
+        @media (max-width:700px) {
+            padding-bottom: 0px;
+        }
+    }
+
+    &__header {
+        h3 {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+     
+
+            @media (max-width:1000px) {
+                font-size: 26px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 24px;
+            color: white;
+         
+
+            @media (max-width:1000px) {
+                font-size: 15px;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &__items {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media (max-width:1250px) {
+            justify-content: space-around;
+        }
+
+        @media (max-width:700px) {
+            margin-top: 35px;
+        }
+
+    }
+
+    &__item {
+        position: relative;
+
+        width: 352px;
+
+        max-width: 100%;
+        margin: 0px 15px;
+        margin-bottom: 80px;
+
+        @media (max-width:500px) {
+            margin: 0px;
+            margin-bottom: 60px;
+        }
+
+        img {
+            width: 352px;
+            height: 392px;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+        &-text {
+            width: 320px;
+            background: #FFD800;
+            position: absolute;
+            padding: 32px;
+            bottom: -6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 91%;
+
+            @media (max-width:1000px) {
+                padding: 20px;
+            }
+
+            p {
+                font-size: 28px;
+                color: #3A282E;
+                font-weight: 500;
+                line-height: 32px;
+                position: relative;
+
+                text-decoration: underline 2px rgba(255, 255, 255, 0);
+                transition: text-decoration-color 300ms;
+
+                @media (max-width:1000px) {
+                    font-size: 20px;
+                }
+
+
+            }
+
+            &::after {
+                content: '';
+                width: 32px;
+                height: 32px;
+                display: block;
+                background-image: url(../images/Arrow-Right.webp);
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 0;
+                transition: opacity 300ms;
+            }
+        }
+
+        &:hover {
+            .front-blocks__item-text {
+                p {
+                    text-decoration-color: #3A282E;
+
+                }
+            }
+
+            .front-blocks__item-text {
+
+                &::after {
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+}

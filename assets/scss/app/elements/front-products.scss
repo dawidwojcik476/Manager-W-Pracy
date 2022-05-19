@@ -1,0 +1,200 @@
+.front-products {
+    background-color: #FBF4EF;
+
+    &__container {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 120px 50px;
+        padding-bottom: 100px;
+
+        @media (max-width:1000px) {
+            padding: 40px 15px;
+        }
+
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #3A282E;
+            text-align: center;
+
+            @media (max-width:1000px) {
+                font-size: 26px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 24px;
+            color: #3A282E;
+            text-align: center;
+
+            @media (max-width:1000px) {
+                font-size: 15px;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        flex-wrap: wrap;
+
+        @media (max-width:1250px) {
+            justify-content: space-around;
+        }
+
+        @media (max-width:700px) {
+            margin-top: 35px;
+        }
+    }
+
+    &__item {
+        display: block;
+        width: 352px;
+        margin: 0px 15px;
+        text-decoration: none;
+        margin-bottom: 50px;
+
+        @media (max-width:500px) {
+            margin: 0px;
+            margin-bottom: 60px;
+        }
+
+        img {
+            height: 346px;
+            object-fit: cover;
+            width: 100%;
+            @media (max-width:1250px) {
+                height: 300px;
+            }
+        }
+
+        &-date-cat {
+            display: flex;
+            margin: 15px;
+            margin-bottom: 8px;
+
+            p {
+                color: #796165;
+                margin-right: 15px;
+                font-size: 12px;
+            }
+
+            ul {
+                list-style-type: none;
+                display: flex;
+
+                li {
+                    padding: 0px 15px;
+                    border-left: 1px solid #F3E8E3;
+                    color: #796165;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &:hover {
+            .front-products__title {
+                text-decoration-color: #3A282E;
+            }
+
+        }
+
+    }
+
+    &__title {
+        color: #3A282E;
+        font-size: 28px;
+        margin: 0px 15px;
+        line-height: 32px;
+        text-decoration: underline 2px rgba(255, 255, 255, 0);
+        transition: text-decoration-color 300ms;
+        margin-top: 32px;
+        @media (max-width:1250px) {
+            margin-top: 22px;
+            font-size: 22px;
+      
+            line-height:26px;
+        }
+    }
+    &__excerpt {
+        color: #3A282E;
+        font-size: 18px;
+        margin: 0px 15px;
+        line-height: 32px;
+        margin-top: 10px;
+        @media (max-width:1250px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+    }
+
+    &__button {
+        text-align: center;
+        color: #796165;
+        text-decoration: none;
+        padding: 12px 0px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        margin-left: 15px;
+        display: block;
+        width: 130px;
+        margin-top: 40px;
+        transition: 0.4s;
+        background-color: #F12626;
+        font-weight: bold;
+        color: white;
+        @media (max-width:1250px) {
+            margin-top: 30px;
+            width: 100px;
+            font-size: 15px;
+            padding:8px 0;
+        }
+
+
+        &:hover {
+            
+            background-color: transparent;
+            border: 1px solid #3A282E;
+            color: #3A282E;
+        }
+        &-archive {
+            font-weight: bold;
+                text-align: center;
+                color: #796165;
+                text-decoration: none;
+                padding: 13px 0px;
+                border-radius: 4px;
+                border: 2px solid #f3e5de;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: 215px;
+                margin-top: 70px;
+                transition: 0.4s;
+                @media (max-width:1250px) {
+                    margin-top: 0px;
+                }
+             
+        
+                &:hover {
+                    background-color: #F12626;
+                    border: 2px solid #F12626;
+                    color: white;
+                }
+            
+        }
+    }
+}

@@ -1,0 +1,346 @@
+.contact-block {
+
+
+    background-color: #FBF4EF;
+
+    &__container {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 130px 50px;
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:1140px) {
+            padding: 40px 15px;
+
+        }
+
+        @media (max-width:750px) {
+            flex-direction: column;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .wpcf7-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            label {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+                justify-content: space-between;
+
+                .optional {
+                    font-size: 12px;
+                    color: #B0928C;
+                    position: relative;
+                    top: 5px;
+
+                }
+
+                &.half {
+                    width: 47%;
+
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 14px;
+                    border: 0;
+                    outline: 0;
+                    color: #796165;
+                    border-radius: 4px;
+                }
+
+                textarea {
+                    height: 115px;
+                }
+
+                font-size: 14px;
+                font-weight: 500;
+
+                color:#3A282E;
+
+                span {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+            }
+
+            .policy {
+                width: 100%;
+                font-size: 12px;
+                color: #796165;
+            }
+
+            .wpcf7-submit {
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 12px 44px;
+                cursor: pointer;
+                border-radius: 4px;
+                background-color: #F12626;
+                text-decoration: none;
+                transition: 0.4s;
+                border: 1px solid transparent;
+                display: inline-block;
+                margin-top: 32px;
+                transition: 0.4s;
+                margin-left: auto;
+
+                @media (max-width:900px) {
+                    margin-top: 30px;
+                }
+
+                @media (max-width:900px) {
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    font-size: 16px;
+                    padding: 10px 45px;
+                }
+
+
+
+                &:hover {
+                    background-color: transparent;
+                    color: #3A282E;
+                    border: 1px solid #3A282E;
+                }
+            }
+
+            .wpcf7-spinner {
+                margin: 0px -12px;
+            }
+
+        }
+
+        .wpcf7 form.invalid .wpcf7-response-output,
+        .wpcf7 form.unaccepted .wpcf7-response-output,
+        .wpcf7 form.payment-required .wpcf7-response-output,
+        .wpcf7 form.failed .wpcf7-response-output,
+        .wpcf7 form.aborted .wpcf7-response-output,
+        .wpcf7 form.success .wpcf7-response-output,
+        .wpcf7 form.aborted .wpcf7-response-output {
+            border: 0 !important;
+        }
+    }
+
+    &__leftside {
+
+        width: 40%;
+
+        @media (max-width:750px) {
+            width: 100%;
+        }
+
+        h3 {
+            color: #3A282E;
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 55px;
+
+            @media (max-width:900px) {
+                font-size: 26px;
+                line-height: 36px;
+                margin-bottom: 25px;
+            }
+        }
+
+        img {
+            @media (max-width:750px) {
+                display: none;
+            }
+        }
+    }
+
+    &__rightside {
+
+        width: 50%;
+        @media (max-width:750px) {
+            width: 100%;
+        }
+   
+    }
+}
+
+.contact {
+    padding-bottom: 128px;
+    @media (max-width:750px) {
+        padding-bottom: 50px;
+    }
+    &__container {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        padding: 0 50px;
+
+        display: flex;
+        justify-content: space-between;
+    
+        @media (max-width:1000px) {
+            padding: 0 20px;
+        }
+        @media (max-width:750px) {
+         flex-direction: column-reverse;
+        }
+    }
+    &__leftside {
+
+        width: 40%;
+
+        @media (max-width:750px) {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+
+       
+    }
+
+    &__rightside {
+        margin-top: 50px;
+        width: 50%;
+        @media (max-width:750px) {
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        .wpcf7-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+h2 {
+    color: #3A282E;
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 20px;
+
+            @media (max-width:900px) {
+                font-size: 26px;
+                line-height: 36px;
+                margin-bottom: 15px;
+            }
+}
+            label {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+                justify-content: space-between;
+
+                .optional {
+                    font-size: 12px;
+                    color: #B0928C;
+                    position: relative;
+                    top: 5px;
+
+                }
+
+                &.half {
+                    width: 47%;
+
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 14px;
+                    border: 0;
+                    outline: 0;
+                    color: #796165;
+                    border-radius: 4px;
+                    border:1px solid #D8C5C0;
+                    transition: 0.4s;
+                    &:focus {
+                        border:#F12626 1px solid;
+                    }
+                }
+
+                textarea {
+                    height: 115px;
+                }
+
+                font-size: 14px;
+                font-weight: 500;
+
+                color:#3A282E;
+
+                span {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+            }
+
+            .policy {
+                width: 100%;
+                font-size: 12px;
+                color: #796165;
+            }
+
+            .wpcf7-submit {
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 12px 44px;
+                cursor: pointer;
+                border-radius: 4px;
+                background-color: #F12626;
+                text-decoration: none;
+                transition: 0.4s;
+                border: 1px solid transparent;
+                display: inline-block;
+                margin-top: 32px;
+                transition: 0.4s;
+                margin-left: auto;
+
+                @media (max-width:900px) {
+                    margin-top: 30px;
+                }
+
+                @media (max-width:900px) {
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    font-size: 16px;
+                    padding: 10px 45px;
+                }
+
+
+
+                &:hover {
+                    background-color: transparent;
+                    color: #3A282E;
+                    border: 1px solid #3A282E;
+                }
+            }
+
+            .wpcf7-spinner {
+                margin: 0px -12px;
+            }
+
+        }
+
+        .wpcf7 form.invalid .wpcf7-response-output,
+        .wpcf7 form.unaccepted .wpcf7-response-output,
+        .wpcf7 form.payment-required .wpcf7-response-output,
+        .wpcf7 form.failed .wpcf7-response-output,
+        .wpcf7 form.aborted .wpcf7-response-output,
+        .wpcf7 form.success .wpcf7-response-output,
+        .wpcf7 form.aborted .wpcf7-response-output {
+            border: 0 !important;
+        }
+    }
+}
